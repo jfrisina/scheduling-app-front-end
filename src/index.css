@@ -1,3 +1,6 @@
+/* START INDEX.CSS ----------------------------------- */
+
+/* GENERAL STYLING----------------------------------- */
 :root {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -7,41 +10,45 @@
   color-scheme: light dark;
   color: #242424;
   background-color:white;
-  
-  /* rgba(255, 255, 255, 0.87); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
 
+/* LINK STYLING----------------------------------- */
+a {
+  font-weight: 500;
+  color: #3DAFC2;
+  text-decoration: inherit;
+  border-bottom: 3px solid #3DAFC2;
+}
+a:hover {
+  color: #2E8388;
+}
+
+
+/* PAGE TITLE STYLING----------------------------------- */
+.page-title {
+  margin-bottom: .35em;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
   background-color: #eee;
   color: #2c2c2c;
   margin: 0;
-  padding: .75em
+  padding: .5em
 }
 
+/* BUTTON STYLING----------------------------------- */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -54,22 +61,42 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #3DAFC2;
+  color: black;
+  font-weight: bold;
+}
+
+/*  for links that look like buttons */
+.button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: .25em;
+}
+.button:hover {
+	color: black;
+  font-weight: bold;
+	background-color: #3DAFC2;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* END INDEX.CSS ----------------------------------- */
+
+/* SHIFT CREATED PAGE  -------------------------------------------------------------*/
+.check-icon {
+	color: #28a745;
+}
+.form-complete-icon {
+  width: 10em;
+  vertical-align: -0.125em;
+  margin: 0 auto 1.2em auto;
 }

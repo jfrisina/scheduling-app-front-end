@@ -1,0 +1,12 @@
+.schedule-buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	background-color: #2b7b88;
+	padding: 1em 2em;
+	color: white;
+	border-radius: 50px;
+}
+

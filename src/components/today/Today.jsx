@@ -1,7 +1,13 @@
+/* IMPORTS -------------------------------------------------------------*/
 import './Today.css';
-import { Link } from 'react-router-dom';
+import ScheduleButtons from '../side-buttons/SideButtons';
 
-const Schedule = ({ data }) => {
+
+/* TODAY SCHEDULE CODE -------------------------------------------------------------*/
+const TodaySchedule = ({ data }) => {
+	// sort data by time
+	const sortedData = [...data].sort((a, b) => new Date(a.starttime) - new Date(b.starttime));
+
 	return (
 		<div className="schedule">
 			<h2>Today</h2>
@@ -14,23 +20,19 @@ const Schedule = ({ data }) => {
 				</tr>
 				</thead>
 				<tbody>
-				{data.map(({id, starttime, position, name }) => (
+				{sortedData.map(({id, starttime, position, name }) => (
 					<tr key={id}>
 						<td>{starttime}</td>
-						<td>{position}</td>
-						<td>{name}</td>		
+						<td className="table-position">{position}</td>
+						<td className="table-employee">{name}</td>		
 					</tr>
-						))}
-					{/* <td>{data.starttime}</td>
-					<td>{data.position}</td>
-					<td>{data.name}</td> */}
-		
+						))}		
 				</tbody>
-				
 			</table>
+			<ScheduleButtons />
 		</div>
 	);
 };
 
 /* EXPORT ------------------------------*/
-export default Schedule;
+export default TodaySchedule;

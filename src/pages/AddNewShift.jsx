@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import TodaySchedule from '../components/today/Today';
 import axios from 'axios';
+import ShiftForm from '../components/shift-form/ShiftForm';
 
 
-const Schedule = () => {
+const AddNewShift = () => {
 	// useState to save data 
 	const [data, setData] = useState(null);
 	
@@ -17,17 +17,16 @@ const Schedule = () => {
 			} catch (error) {
 				console.error(error);
 			}
-		};
+	 	};
 		getData();
 	}, []);
 
 	return (
 		<>
-			<h1 className="page-title">Schedule</h1>
-			{/* <Today /> */}
-			{data? <TodaySchedule data={data} /> : <p>There are no shifts to show. Contact Jaki!</p>}
+			<h1 className="page-title">Add New Shift</h1>
+			{data? <ShiftForm data={data} />: <p>Your form is not showing. Contact Jaki!</p>}
 		</>
 	);
 };
 
-export default Schedule;
+export default AddNewShift;

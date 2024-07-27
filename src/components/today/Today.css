@@ -1,0 +1,28 @@
+/* TABLE STYLING-----------------------------------*/
+/* center the table */
+table {
+	margin: 0 auto 2em auto;
+	border-collapse: collapse; 
+}
+
+/* left align the position and employee columns for readability */
+.table-position {
+	text-align: start;
+}
+.table-employee {
+	text-align: start;
+}
+
+/* add spacing between columns for readability */
+th, td {
+	padding: .1em 1em;
+}
+
+th {
+	font-size: 1.1em;
+}
+
+/* table headers styling */
+thead {
+	border-bottom: 3px solid #242424;
+}
