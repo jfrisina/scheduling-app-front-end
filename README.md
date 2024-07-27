@@ -18,3 +18,6 @@ Add info dynamically upon login:
 * add Name 
 * add Work Locations
 
+### Employees Page
+* add employees db to pull employees from 
+
