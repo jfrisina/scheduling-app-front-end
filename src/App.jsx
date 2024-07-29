@@ -15,6 +15,7 @@ import AddNewShift from './pages/AddNewShift'
 import TaskComplete from './pages/TaskComplete'
 import Home from './pages/Home'
 import Employees from './pages/Employees'
+import Login from './pages/Login'
 
 // styling
 import './App.css'
@@ -30,7 +31,7 @@ import dotenv from 'dotenv'
 /* MAIN APP -------------------------------------------------------------*/
 function App() { 
 
- // what to display on app 
+ // what to display on every page ever 
   return (
     <>
       <Navbar />
@@ -39,9 +40,9 @@ function App() {
        <Route path='/Home' element={<Home />} />
         <Route path='/Schedule' element={<Schedule />} />
         <Route path='/Employees' element={<Employees />} />
+        <Route path='/Login' element={<Login />} />
         <Route path='/Add-New-Shift' element={<AddNewShift />} />
         <Route path='/Task-Complete' element={<TaskComplete />} />
-
       </Routes>
       <Footer />
     </>
