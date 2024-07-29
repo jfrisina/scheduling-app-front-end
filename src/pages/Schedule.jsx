@@ -1,7 +1,7 @@
+// IMPORTS -------------------------------------------
 import React, { useState, useEffect } from 'react';
-import TodaySchedule from '../components/today/Today';
 import axios from 'axios';
-
+import TodaySchedule from '../components/today/Today';
 
 const Schedule = () => {
 	// useState to save data 
@@ -24,7 +24,6 @@ const Schedule = () => {
 	return (
 		<>
 			<h1 className="page-title">Schedule</h1>
-			{/* <Today /> */}
 			{data? <TodaySchedule data={data} /> : <p>There are no shifts to show. Contact Jaki!</p>}
 		</>
 	);

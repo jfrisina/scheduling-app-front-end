@@ -1,0 +1,11 @@
+.table-name {
+    text-align: start;
+}
+
+tr {
+    margin: 0 .25em;
+}
+
+.employee-table-row > td {
+    padding: 1em;
+}

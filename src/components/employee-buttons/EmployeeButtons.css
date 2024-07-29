@@ -1,0 +1,32 @@
+.employee-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employee-buttons > a {
+    background-color: #3DAFC2;
+    color: white;
+}
+
+.employee-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee-buttons > a:hover {
+    background-color: black;
+    color: white;
+}
+
+.plus-icon {
+    fill: white;
+    height: 1em;
+    padding-right: .5em;
+}
+
+.delete-button:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+}

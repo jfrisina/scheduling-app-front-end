@@ -1,0 +1,44 @@
+form {
+	display: flex !important;
+	flex-direction: column;
+	max-width: 300px;
+	margin: auto;
+}
+
+label {
+	text-align: left;
+	margin: 0 0 .1em .5em;
+}
+
+input {
+	margin-bottom: 1.4em;
+	padding: 1em;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	color: black;
+	font-weight: bold;
+	background-color: white;
+}
+
+input:focus {
+	outline: 3px solid black;
+}
+
+select {
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	color: black;
+	font-weight: bold;
+}
+
+select:focus {
+	outline: 3px solid black;
+}
+
+#end-time {
+	margin-bottom: 1.75em;
+}
+

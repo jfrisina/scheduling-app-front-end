@@ -24,5 +24,11 @@ Add info dynamically upon login:
 ### Employees Page
 * add employees db to pull employees from 
 
+### Employees in Building
+Add a section on the Employees page that shows a list of employees that are in the building for the day, but not scheduled for any desk shifts.
+
+### Out of Library
+Add a section on the Today shifts page that shows the employees that are out of the library for the day (or a certain time period)
+
 ## Questions for Dylan
 1. How do I get my page/footer to fill the whole screen without causing unnecessary scrolling? (Reference: Go to the login page and see how the footer is always too short for the screen size). I tried a couple different viewheight and viewwidth stuff but couldn't get it to work and was probably doing it wrong anyway >.<

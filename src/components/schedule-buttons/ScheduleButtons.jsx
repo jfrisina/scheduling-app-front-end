@@ -1,5 +1,5 @@
 /* IMPORTS -------------------------------*/
-import './SideButtons.css';
+import './ScheduleButtons.css';
 
 /* MAIN CODE -------------------------------*/
 const ScheduleButtons = () => {

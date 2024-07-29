@@ -1,6 +1,6 @@
 /* IMPORTS -------------------------------------------------------------*/
 import './Today.css';
-import ScheduleButtons from '../side-buttons/SideButtons';
+import ScheduleButtons from '../schedule-buttons/ScheduleButtons';
 
 
 /* TODAY SCHEDULE CODE -------------------------------------------------------------*/

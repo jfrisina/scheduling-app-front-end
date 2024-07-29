@@ -1,12 +1,9 @@
-// IMPORTS ---------------------------------------------------------------
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import EmployeeList from '../components/employee-list/EmployeeList';
-import EmployeeButtons from '../components/employee-buttons/EmployeeButtons';
+import EmployeeForm from '../components/employee-form/EmployeeForm';
 
 
-const Employees = () => {
-
+const AddNewEmployee = () => {
 	// useState to save data 
 	const [data, setData] = useState(null);
 	
@@ -20,18 +17,16 @@ const Employees = () => {
 			} catch (error) {
 				console.error(error);
 			}
-		};
+	 	};
 		getData();
 	}, []);
 
-  return (
-	<>
-    <h1 className="page-title">Employees</h1>
-
-	{data? <EmployeeList data={data} /> : <p>There are no employees to show. Contact Jaki!</p>}
-	</>
-  );
+	return (
+		<>
+			<h1 className="page-title">Add New Employee</h1>
+			{data? <EmployeeForm data={data} />: <p>Your form is not showing. Contact Jaki!</p>}
+		</>
+	);
 };
 
-export default Employees;
-
+export default AddNewEmployee;

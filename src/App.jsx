@@ -16,6 +16,7 @@ import TaskComplete from './pages/TaskComplete'
 import Home from './pages/Home'
 import Employees from './pages/Employees'
 import Login from './pages/Login'
+import AddNewEmployee from './pages/AddNewEmployee'
 
 // styling
 import './App.css'
@@ -43,6 +44,8 @@ function App() {
         <Route path='/Login' element={<Login />} />
         <Route path='/Add-New-Shift' element={<AddNewShift />} />
         <Route path='/Task-Complete' element={<TaskComplete />} />
+        <Route path='/Add-New-Employee' element={<AddNewEmployee />} />
+
       </Routes>
       <Footer />
     </>
