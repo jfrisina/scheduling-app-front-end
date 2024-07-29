@@ -5,26 +5,43 @@ import EmployeeForm from '../components/employee-form/EmployeeForm';
 
 const AddNewEmployee = () => {
 	// useState to save data 
-	const [data, setData] = useState(null);
+	const [employees, setEmployees] = useState(null);
+	const [positions, setPositions] = useState(null);
+	const [loading, setLoading] = useState(null);
+	const [error, setError] = useState(null);
 	
 	// function useEffect to run code  
 	useEffect(() => {
 		async function getData() {
 			try {
-				const response = await axios.get('http://localhost:3000/employees');
-				setData(response.data);
-				//conditional rendering in function for data display
+				setLoading(true);
+				const [employeesResponse, positionsResponse] = await Promise.all([
+					axios.get('http://localhost:3000/employees'),
+					axios.get('http://localhost:3000/positions')			
+				]);
+
+				setEmployees(employeesResponse.data);
+				setPositions(positionsResponse.data);
 			} catch (error) {
+				setError(error);
 				console.error(error);
+			} finally {
+				setLoading(false);
 			}
 	 	};
 		getData();
 	}, []);
 
+	if (loading) return <p>Loading...</p>;
+	if (error) return <p>Error loading data: {error.message}</p>;
+
 	return (
 		<>
 			<h1 className="page-title">Add New Employee</h1>
-			{data? <EmployeeForm data={data} />: <p>Your form is not showing. Contact Jaki!</p>}
+			{employees && positions ? (
+				<EmployeeForm employees={employees} positions={positions} />
+				): (<p>Your form is not showing. Contact Jaki!</p>
+				)}
 		</>
 	);
 };

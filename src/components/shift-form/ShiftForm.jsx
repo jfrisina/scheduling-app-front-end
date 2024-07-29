@@ -52,7 +52,7 @@ const ShiftForm = ({ data }) => {
 				<label htmlFor="end-time">End Time</label>
 				<input type="text" id="end-time" placeholder="End Time" name="end-time" />
 
-				<button type="button" onClick={() => window.location.href='https://example.com'}>
+				<button type="button" onClick={() => window.location.href='/schedule'}>
   Submit
 </button>
 			</form>
