@@ -10,6 +10,9 @@ This is a scheduling app that displays the daily schedule. You can add, edit, de
 * Axios
 * API
 
+## Link to back end repo
+https://github.com/jfrisina/scheduling-app
+
 ## Features to add:
 
 ### Upcoming Shifts
