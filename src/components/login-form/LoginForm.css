@@ -1,0 +1,10 @@
+.forgot-pwd {
+	max-width: 300px;
+	margin: 1em auto 2em auto;
+	text-align: left;
+}
+
+.forgot-pwd-button {
+	color: #2f2f2f;
+	text-align: left;
+}
