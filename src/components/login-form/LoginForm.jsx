@@ -22,8 +22,8 @@ const LoginForm = ({ setNewUser }) => {
 			Log In
 		  </button>
 		</form>
-		<div class="forgot-pwd">
-			<a href="#" class="forgot-pwd-button">Forgot Password</a>	
+		<div className="forgot-pwd">
+			<a href="#" className="forgot-pwd-button">Forgot Password</a>	
 		</div>
 		
 	  </div>
