@@ -38,7 +38,6 @@ const EmployeeList = ({ data }) => {
 						))}		
 				</tbody>
 			</table>
-			<EmployeeButtons />
 		</div>
 	);
 };

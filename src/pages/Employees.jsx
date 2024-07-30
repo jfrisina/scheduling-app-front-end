@@ -24,10 +24,11 @@ const Employees = () => {
 		getData();
 	}, []);
 
+  // page display	
   return (
 	<>
     <h1 className="page-title">Employees</h1>
-
+	<EmployeeButtons />
 	{data? <EmployeeList data={data} /> : <p>There are no employees to show. Contact Jaki!</p>}
 	</>
   );

@@ -9,10 +9,11 @@
     color: white;
 }
 
-.employee-button {
+.add-employee-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2em;
 }
 
 .employee-buttons > a:hover {

@@ -17,6 +17,8 @@ import Home from './pages/Home'
 import Employees from './pages/Employees'
 import Login from './pages/Login'
 import AddNewEmployee from './pages/AddNewEmployee'
+import EditEmployee from './pages/EditEmployee'
+import DeleteEmployee from './pages/DeleteEmployee'
 
 // styling
 import './App.css'
@@ -45,7 +47,8 @@ function App() {
         <Route path='/Add-New-Shift' element={<AddNewShift />} />
         <Route path='/Task-Complete' element={<TaskComplete />} />
         <Route path='/Add-New-Employee' element={<AddNewEmployee />} />
-
+        <Route path='/Edit-Employee' element={<EditEmployee />} />
+        <Route path='/Delete-Employee' element={<DeleteEmployee />} />
       </Routes>
       <Footer />
     </>
